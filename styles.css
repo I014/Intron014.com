@@ -24,9 +24,9 @@ a:visited {
 }
 
 .footerPlaceHolder {
-  position: absolute;
-  bottom: 0;
-  width: 99vw;
+  position: relative;
+  bottom: auto;
+  width: auto;
 }
 
 .material-icons {
