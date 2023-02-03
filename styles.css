@@ -38,6 +38,14 @@ a:visited {
   width: auto;
 }
 
+.terms-of-use {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
