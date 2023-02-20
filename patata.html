@@ -2,10 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Le Patata</title>
+    <title>Le Patatas</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Patata</h1>
-<img src="/resources/patata.jpg" alt="potato" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<h1 style="text-align: center;">Patata!</h1>
+<img id="potato-img" src="" alt="potato image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<script>
+    // Array of potato images
+    var potatoImages = [
+        "/resources/patata.jpg",
+        "/resources/patata2.jpg",
+        "/resources/patata3.jpg",
+        "/resources/patata4.jpg"
+    ];
+
+    // Generate a random index
+    var randomIndex = Math.floor(Math.random() * potatoImages.length);
+
+    // Set the image source to the randomly selected image
+    document.getElementById("potato-img").src = potatoImages[randomIndex];
+</script>
 </body>
 </html>
