@@ -28,6 +28,7 @@
 
       gtag('config', 'G-SYX6EMRPMW');
     </script>
+
     <script src="./resources/PureSnow.js"></script>
     <!--Color Scheme:
     Normal:
@@ -45,11 +46,30 @@
 
 <body>
   <div id="snow"></div>
-  <section class=title> 
-    <p>
-      Intron014
-    </p>
-  </section>
+  <div id="typewriter" style="text-align: center; padding: 2em;
+  font-size: xx-large;"></div>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script type="text/javascript">
+      const typewriter = new Typewriter('#typewriter', {
+          loop: true,
+          cursor: '_'
+      });
+
+      typewriter.typeString('Welcome!')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('I\'m Jorge')
+          .pauseFor(2500)
+          .deleteChars(5)
+          .pauseFor(500)
+          .typeString('Intron014!')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('Potato!')
+          .deleteAll()
+          .pauseFor(2500)
+          .start();
+  </script>
 
   <p><span class="loading dots3"></span></p>
   <div class="flex container">
