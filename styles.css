@@ -3,7 +3,7 @@ body {
   color: white;
   font-family: 'Roboto Mono', monospace;
   font-size: large;
-  /*overflow: hidden; */
+  overflow: auto;
 }
 .snowflake { /*MORE CHRISTMAS*/
   position: absolute;
