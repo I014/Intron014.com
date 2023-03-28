@@ -108,7 +108,37 @@
     </div>
   </div>
   <p><span class="loading dots3"></span></p>
-  <p><img src="https://toru.kio.dev/api/v1/Intr0n?theme=dark" alt="Last.fm Activity" style="width: 15%" /></p>
+  <p><img src="https://toru.kio.dev/api/v1/Intr0n?theme=dark" alt="Last.fm Activity" style="max-width: 100%" /></p>
+
+<style>
+  /* Define the styles for screens with a maximum width of 600px */
+  @media screen and (max-width: 600px) {
+    img {
+      max-width: 80%; /* Set the image width to 80% of the available screen width */
+    }
+  }
+  
+  /* Define the styles for screens with a maximum width of 900px */
+  @media screen and (max-width: 900px) {
+    img {
+      max-width: 60%; /* Set the image width to 60% of the available screen width */
+    }
+  }
+  
+  /* Define the styles for screens with a maximum width of 1200px */
+  @media screen and (max-width: 1200px) {
+    img {
+      max-width: 40%; /* Set the image width to 40% of the available screen width */
+    }
+  }
+  
+  /* Define the styles for screens with a maximum width of 1600px */
+  @media screen and (max-width: 1600px) {
+    img {
+      max-width: 30%; /* Set the image width to 30% of the available screen width */
+    }
+  }
+</style>
   <div class="footerPlaceHolder">
     <p>
         <b class=copyright> <a href="https://dash.intron014.com">dash</a></b>
