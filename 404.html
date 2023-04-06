@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="/resources/favicon.ico"/>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://maxbeier.github.io/text-spinners/spinners.css">
+        <script src="https://kit.fontawesome.com/d48d8ad0f3.js" crossorigin="anonymous"></script>
+        <title>404 - Page Not Found</title>
+    </head>
+    <body>
+        <div class="centeration">
+            <div id="typewriter" style="text-align: center;font-size: xx-large;"></div>
+            <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+            <script type="text/javascript">
+                const typewriter = new Typewriter('#typewriter', {
+                    loop: true,
+                    cursor: '_'
+                });
+                typewriter.typeString('404!')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString('Page Not Found!')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString('Whooops! :)')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .pauseFor(100)
+                    .start();
+            </script>
+        <p>The page you are looking for cannot be found.</p>
+        <p>Please check the URL or <a href="https://intron014.com">click here</a> to go to our homepage.</p>
+        </div>
+    </body>
+</html>

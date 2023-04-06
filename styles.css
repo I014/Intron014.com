@@ -5,6 +5,14 @@ body {
   font-size: large;
   overflow: auto;
 }
+.centeration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+}
 .snowflake { /*MORE CHRISTMAS*/
   position: absolute;
   width: 10px;
