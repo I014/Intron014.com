@@ -46,14 +46,7 @@
           cursor: '_'
       });
 
-      typewriter.typeString('Welcome!')
-          .pauseFor(2500)
-          .deleteAll()
-          .typeString('I\'m Jorge')
-          .pauseFor(2500)
-          .deleteChars(5)
-          .pauseFor(500)
-          .typeString('Intron014!')
+      typewriter.typeString('Please make a selection')
           .pauseFor(2500)
           .deleteAll()
           .typeString('Potato!')
@@ -62,80 +55,36 @@
           .start();
   </script>
 
-  <p><span class="loading dots3"></span></p>
+  <p><span class="loading dots3"></span></p>  
   <div class="flex container">
     <div class="flex">
-      <ul class="name">
-        <!-- <li><i class="fab fa-discord" style="color: white;"></i><a href=""> discord</a></li> -->
-        <li><i class="fab fa-telegram" style="color: white;"></i><a href="https://t.me/intron014"> telegram</a></li>
-        <li><i class="fas fa-envelope-open" style="color: white;"></i><a href="mailto:me@intron014.com"> email</a></li>
-        <li><i class="fa-solid fa-key" style="color: white;"></i><a href="/resources/pgp.txt"> pgp</a></li>
-      </ul>
+        <ul class="name">
+            <form>
+            <input type="radio" id="basic" name="website" value="https://sfs.intron014.com/">
+            <label for="basic">Basic Website</label><br>
+            <input type="radio" id="resourceful" name="website" value="https://files.intron014.com/share/wRuTnR-t">
+            <label for="resourceful">Resourceful Website</label><br>
+            </form>
+        </ul>
     </div>
     <div class="flex">
-      <ul class="link">
-        <!-- <li><a href="">intron014#5569</a></li> -->
-        <li><a href="https://t.me/intron014">@intron014</a></i></li>
-        <li><a href="mailto:me@intron014.com">me@intron014.com</a></li>
-        <li><a href="/resources/pgp.txt">08FC 982A 76AD F8D0</a></li>
-      </ul>
+        <ul class="link">
+        </ul>
     </div>
   </div>
-  <p><span class="loading dots3"></span></p>
-  <div class="flex container">
-    <div class="flex">
-      <ul class="name">
-          <li><i class="fa-brands fa-mastodon" style="color: white;"></i><a rel="me" href="https://meow.social/@Intron014"> mastodon</a></li>
-          <li><i class="fab fa-twitter-square" style="color: white;"></i><a href="https://twitter.com/intron014"> twitter</a></li>
-        <li><i class="fab fa-github-square" style="color: white;"></i><a href="https://github.com/Intron014"> github</a></li>
-      </ul>
-    </div>
-    <div class="flex">
-      <ul class="link">
-        <li><a rel="me" href="https://meow.social/@Intron014">@intron014</a></li>
-        <li><a href="https://twitter.com/intron014">@intron014</a></li>
-        <li><a href="https://github.com/Intron014">@intron014</a></li>
-      </ul>
-    </div>
-  </div>
+
+  <script>
+    function navigateToSelectedWebsite() {
+      var selectedWebsite = document.querySelector('input[name="website"]:checked').value;
+      window.location.href = selectedWebsite;
+    }
+  </script>
   <p><span class="loading dots3"></span></p>
   <!-- <p><img src="https://toru.kio.dev/api/v1/Intr0n?theme=dark" alt="Last.fm Activity" style="max-width: 100%" /></p> -->
 
-<style>
-  /* Define the styles for screens with a maximum width of 600px */
-  @media screen and (max-width: 600px) {
-    img {
-      max-width: 80%; /* Set the image width to 80% of the available screen width */
-    }
-  }
-  
-  /* Define the styles for screens with a maximum width of 900px */
-  @media screen and (max-width: 900px) {
-    img {
-      max-width: 60%; /* Set the image width to 60% of the available screen width */
-    }
-  }
-  
-  /* Define the styles for screens with a maximum width of 1200px */
-  @media screen and (max-width: 1200px) {
-    img {
-      max-width: 40%; /* Set the image width to 40% of the available screen width */
-    }
-  }
-  
-  /* Define the styles for screens with a maximum width of 1600px */
-  @media screen and (max-width: 1600px) {
-    img {
-      max-width: 30%; /* Set the image width to 30% of the available screen width */
-    }
-  }
-</style>
   <div class="footerPlaceHolder">
     <p>
-        <b class=copyright> <a href="/webselector.html">files</a></b>
-        <b class=copyright> <a href="https://blog.intron014.com">blog</a></b>
-        <b class=copyright> <a href="https://status.intron014.com">status</a></b><br>
-        <b class=copyright> By navigating this website you're agreeing to the <a href="/tos.html">Terms of Service</a></b><br>
+        <input class=copyright type="button" value="Go" onclick="navigateToSelectedWebsite()"><br>
         <b class=copyright> So long and thanks for all the fish</b><br> <!-- ><(((º> -->
         <b class=copyright> &copy;I014(2020-2023)</b>
     </p>
