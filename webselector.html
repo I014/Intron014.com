@@ -44,14 +44,15 @@
       const typewriter = new Typewriter('#typewriter', {
           loop: true,
           cursor: '_'
+          
       });
 
-      typewriter.typeString('Please make a selection')
-          .pauseFor(2500)
+      typewriter.typeString('Make a selection!')
+          .pauseFor(5000)
           .deleteAll()
           .typeString('Potato!')
           .deleteAll()
-          .pauseFor(2500)
+          .pauseFor(500)
           .start();
   </script>
 
@@ -59,11 +60,30 @@
   <div class="flex container">
     <div class="flex">
         <ul class="name">
+            <p class="name" style="text-align: center; padding-left: 35px;">File Sharing</p>
             <form>
             <input type="radio" id="basic" name="website" value="https://sfs.intron014.com/">
-            <label for="basic">Basic Website</label><br>
+            <label for="basic"><i class="fab fa-telegram" style="color: white;"></i> Test</label><br>
             <input type="radio" id="resourceful" name="website" value="https://files.intron014.com/share/wRuTnR-t">
-            <label for="resourceful">Resourceful Website</label><br>
+            <label for="resourceful">
+              <i class="fab fa-telegram" style="color: white;"></i> Test
+            </label><br>
+        </ul>
+    </div>
+    <div class="flex">
+        <ul class="link">
+        </ul>
+    </div>
+  </div>
+  <br>
+  <div class="flex container">
+    <div class="flex">
+        <ul class="name">
+            <p class="name" style="text-align: center; padding-left: 35px;">Dashboards</p>
+            <input type="radio" id="sd" name="website" value="https://dash.intron014.com/">
+            <label for="sd"><i class="fab fa-telegram" style="color: white;"></i> Test</label><br>
+            <input type="radio" id="dda" name="website" value="https://dashy.chessnibble.com/">
+            <label for="dda"><i class="fab fa-telegram" style="color: white;"></i> Test</label><br>
             </form>
         </ul>
     </div>
@@ -84,7 +104,7 @@
 
   <div class="footerPlaceHolder">
     <p>
-        <input class=copyright type="button" value="Go" onclick="navigateToSelectedWebsite()"><br>
+        <input class=copyright type="button" value="Take me there!" onclick="navigateToSelectedWebsite()"><br>
         <b class=copyright> So long and thanks for all the fish</b><br> <!-- ><(((º> -->
         <b class=copyright> &copy;I014(2020-2023)</b>
     </p>
