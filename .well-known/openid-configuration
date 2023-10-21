@@ -1,5 +1,5 @@
 {
-  "issuer": "https://siu.intron014.com",
+  "issuer": "https://siu.intron014.com/realms/master",
   "authorization_endpoint": "https://siu.intron014.com/realms/master/protocol/openid-connect/auth",
   "token_endpoint": "https://siu.intron014.com/realms/master/protocol/openid-connect/token",
   "userinfo_endpoint": "https://siu.intron014.com/realms/master/protocol/openid-connect/userinfo",
