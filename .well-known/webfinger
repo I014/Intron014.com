@@ -2,7 +2,7 @@
   "subject": "acct:me@intron014.com",
   "links": [
     {
-      "rel": "https://siu.intron014.com/realms/master/.well-known/openid-configuration",
+      "rel": "https://siu.intron014.com",
       "href": "https://siu.intron014.com"
     }
   ]
