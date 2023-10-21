@@ -2,7 +2,7 @@
   "subject": "acct:me@intron014.com",
   "links": [
     {
-      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "rel": "https://siu.intron014.com/realms/master",
       "href": "https://siu.intron014.com"
     }
   ]
