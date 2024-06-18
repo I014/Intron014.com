@@ -37,6 +37,25 @@
 
 <body>
   <!-- <div id="snow"></div> -->
+
+  <div class="cookie-banner">
+    <p>Sorry to disappoint, no cookies here 🍪</p>
+    <div class="button-container">
+        <button onclick="dismissBanner()">Button</button>
+        <button onclick="dismissBanner()">Another button!</button>
+    </div>
+  </div>
+
+
+<script>
+  function dismissBanner() {
+      const banner = document.querySelector('.cookie-banner');
+      banner.style.animation = 'slideDown 0.5s ease-in forwards';
+      setTimeout(() => banner.style.display = 'none', 500);
+  }
+  </script>  
+
+
   <div id="typewriter" style="text-align: center; padding: 2em;
   font-size: xx-large;"></div>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
