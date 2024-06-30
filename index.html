@@ -155,12 +155,21 @@
         <b class=copyright> <a href="https://blog.intron014.com">blog</a></b>
         <b class=copyright> <a href="https://status.intron014.com">status</a></b><br>
         <a href="https://www.last.fm/user/Intr0n">
-          <img src="https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io" alt="Currently playing song">
+          <img id="current-song" src="https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io" alt="Currently playing song">
         </a><br>
         <b class=copyright> By navigating this website you're agreeing to the <a href="/tos.html">Terms of Service</a></b><br>
         <b class=copyright> So long and thanks for all the fish</b><br> <!-- ><(((º> -->
         <b class=copyright> &copy;I014(2020-2024)</b>
     </p>
   </div>
+
+  <script>
+    function updateImage() {
+        var img = document.getElementById('current-song');
+        var currentTime = new Date().getTime(); // Get current time to avoid caching
+        img.src = "https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io&_=" + currentTime;
+    }
+    setInterval(updateImage, 10000);
+</script>
 </body>
 </html>
