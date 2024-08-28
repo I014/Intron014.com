@@ -66,8 +66,10 @@ const cvData = {
 
     if (cvData.projects.length === 0) {
         const cvProjectsSection = document.getElementById('cv-pr');
-        cvProjectsSection.style.display = 'none';
+        if (cvProjectsSection) {
+            cvProjectsSection.style.display = 'none';
+        }
     }
-  }
+  } 
   
   window.addEventListener('load', populateCV);
