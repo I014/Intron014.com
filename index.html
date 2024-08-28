@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#2E343D"/>
-    <title>Intron014</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- OGP STUFF -->
     <meta property="og:description" content="Intron014"/>
     <meta property="og:title" content="Intron014" />
@@ -13,163 +11,153 @@
     <meta property="og:image" content="https://github.com/intron014com/intron014.com/blob/main/resources/Logo.png?raw=true" />
     <meta property="og:locale" content="es_ES" />
     <!-- END OF OGP -->
-    <link rel="icon" type="image/png" href="/resources/favicon.ico"/>
-    <link href="styles.css" rel="stylesheet">
+    <title>Intron014's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link rel="stylesheet" href="https://maxbeier.github.io/text-spinners/spinners.css">
     <script src="https://kit.fontawesome.com/d48d8ad0f3.js" crossorigin="anonymous"></script>
-    <script async src="https://stats.chessnibble.com/script.js" data-website-id="81bbb778-7767-4655-823f-35e6cac2a417"></script>
-    <script src="./resources/PureSnow.js"></script>
-    <!--Color Scheme:
-    Normal:
-        background: #617e9e
-        on-hover:   grey
-    Halloween:
-        background: #eb6123
-        on-hover:   #ff9a00
-    Christmas:
-        background: #e02526
-        on-hover:   #667432
-        -->
-	<style>#forkongithub a{background: #617e9e;color:#fff;text-decoration:none;font-family:roboto+monospace;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}  #forkongithub a:hover{background:grey;color:#fff;}  #forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}  #forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}  #forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://intron014.com/patata">Mornin!</a></span>
 </head>
-
 <body>
-  <!-- <div id="snow"></div> -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- <div class="cookie-banner">
-    <p>Sorry to disappoint, no cookies here 🍪</p>
-    <div class="button-container">
-        <button onclick="dismissBanner()">Button</button>
-        <button onclick="dismissBanner()">Another button!</button>
-    </div>
-  </div> -->
+    <main>
+        <section id="home">
+            <div id="typewriter" style="text-align: center; padding: 2em; font-size: xx-large;">
+                
+                <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+                <script type="text/javascript">
+                const typewriter = new Typewriter('#typewriter', {
+                    loop: true,
+                    cursor: '_'
+                });
 
+                typewriter.typeString('Welcome!')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString('I\'m Jorge')
+                    .pauseFor(2500)
+                    .deleteChars(5)
+                    .pauseFor(500)
+                    .typeString('Intron014!')
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString('Potato!')
+                    .deleteAll()
+                    .pauseFor(2500)
+                    .start();
+                </script>
+            </div>
 
-<script>
-  function dismissBanner() {
-      const banner = document.querySelector('.cookie-banner');
-      banner.style.animation = 'slideDown 0.5s ease-in forwards';
-      setTimeout(() => banner.style.display = 'none', 500);
-  }
-  </script>  
+            <!-- <div class="flex container">
+              <div class="flex">
+                <ul class="name">
+                  <li><i class="fab fa-discord" style="color: white;"></i><a href=""> discord</a></li> -->
+                  <!-- <li><i class="fab fa-telegram" style="color: white;"></i><a href="https://t.me/intron014"> telegram</a></li>
+                  <li><i class="fas fa-envelope-open" style="color: white;"></i><a href="mailto:me@intron014.com"> email</a></li>
+                  <li><i class="fa-solid fa-key" style="color: white;"></i><a href="/resources/pgp.txt"> pgp</a></li>
+                </ul>
+              </div>
+              <div class="flex">
+                <ul class="link">
+                  <li><a href="">intron014#5569</a></li> -->
+                  <!-- <li><a href="https://t.me/intron014">@intron014</a></i></li>
+                  <li><a href="mailto:me@intron014.com">me@intron014.com</a></li>
+                  <li><a href="/resources/pgp.txt">08FC 982A 76AD F8D0</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex container">
+              <div class="flex">
+                <ul class="name">
+                    <li><i class="fa-brands fa-mastodon" style="color: white;"></i><a rel="me" href="https://x.intron014.com/@intron014"> mastodon</a></li>
+                    <li><i class="fa-brands fa-x-twitter" style="color: white;"></i><a href="https://twitter.com/intron014"> twitter</a></li>
+                  <li><i class="fab fa-github-square" style="color: white;"></i><a href="https://github.com/Intron014"> github</a></li>
+                </ul>
+              </div>
+              <div class="flex">
+                <ul class="link">
+                  <li><a rel="me" href="https://x.intron014.com/@intron014">@intron014</a></li>
+                  <li><a href="https://twitter.com/intron014">@intron014</a></li>
+                  <li><a href="https://github.com/Intron014">@intron014</a></li>
+                </ul>
+              </div>
+            </div> -->
 
+        </section>
 
-  <div id="typewriter" style="text-align: center; padding: 2em;
-  font-size: xx-large;"></div>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script type="text/javascript">
-      const typewriter = new Typewriter('#typewriter', {
-          loop: true,
-          cursor: '_'
-      });
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a software developer from Spain, I've been coding since 2014 and currently I'm studying Hardware Engineering at the Polytechnic University of Madrid.</p>
+            <p>I'm a self-taught developer, I've learned everything by myself, I'm a big fan of the open-source community and I'm always looking for new challenges.</p>
+        </section>
 
-      typewriter.typeString('Welcome!')
-          .pauseFor(2500)
-          .deleteAll()
-          .typeString('I\'m Jorge')
-          .pauseFor(2500)
-          .deleteChars(5)
-          .pauseFor(500)
-          .typeString('Intron014!')
-          .pauseFor(2500)
-          .deleteAll()
-          .typeString('Potato!')
-          .deleteAll()
-          .pauseFor(2500)
-          .start();
-  </script>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <i class="fa-brands fa-mastodon" style="color: white;"></i><a rel="me" href="https://x.intron014.com/@intron014"> mastodon</a>, 
+                <i class="fab fa-twitter" style="color: white;"></i><a href="https://twitter.com/intron014"> twitter</a> or 
+                <i class="fab fa-telegram" style="color: white;"></i><a href="https://t.me/intron014"> telegram</a></p>
+            <p>You can also use my <a href="/resources/pgp.txt">pgp key</a> to send me an encrypted<i class="fas fa-envelope" style="color: white;"></i><a href="mailto:me@intron014.com"> email</a> (or send a plain email tbh).</p>
+        </section>
 
-  <p><span class="loading dots3"></span></p>
-  <div class="flex container">
-    <div class="flex">
-      <ul class="name">
-        <!-- <li><i class="fab fa-discord" style="color: white;"></i><a href=""> discord</a></li> -->
-        <li><i class="fab fa-telegram" style="color: white;"></i><a href="https://t.me/intron014"> telegram</a></li>
-        <li><i class="fas fa-envelope-open" style="color: white;"></i><a href="mailto:me@intron014.com"> email</a></li>
-        <li><i class="fa-solid fa-key" style="color: white;"></i><a href="/resources/pgp.txt"> pgp</a></li>
-      </ul>
-    </div>
-    <div class="flex">
-      <ul class="link">
-        <!-- <li><a href="">intron014#5569</a></li> -->
-        <li><a href="https://t.me/intron014">@intron014</a></i></li>
-        <li><a href="mailto:me@intron014.com">me@intron014.com</a></li>
-        <li><a href="/resources/pgp.txt">08FC 982A 76AD F8D0</a></li>
-      </ul>
-    </div>
-  </div>
-  <p><span class="loading dots3"></span></p>
-  <div class="flex container">
-    <div class="flex">
-      <ul class="name">
-          <li><i class="fa-brands fa-mastodon" style="color: white;"></i><a rel="me" href="https://x.intron014.com/@intron014"> mastodon</a></li>
-          <li><i class="fa-brands fa-x-twitter" style="color: white;"></i><a href="https://twitter.com/intron014"> twitter</a></li>
-        <li><i class="fab fa-github-square" style="color: white;"></i><a href="https://github.com/Intron014"> github</a></li>
-      </ul>
-    </div>
-    <div class="flex">
-      <ul class="link">
-        <li><a rel="me" href="https://x.intron014.com/@intron014">@intron014</a></li>
-        <li><a href="https://twitter.com/intron014">@intron014</a></li>
-        <li><a href="https://github.com/Intron014">@intron014</a></li>
-      </ul>
-    </div>
-  </div>
-  <p><span class="loading dots3"></span></p>
-  <!-- <p><img src="https://toru.kio.dev/api/v1/Intr0n?theme=dark" alt="Last.fm Activity" style="max-width: 100%" /></p> -->
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-section" id="cv-edu">
+                <h3>Education</h3>
+                <ul id="education-list">
+                    <!-- Autofilled by JS -->
+                </ul>
+            </div>
+            <div class="cv-section" id="cv-exp">
+                <h3>Experience</h3>
+                <ul id="experience-list">
+                    <!-- Autofilled by JS -->
+                </ul>
+            </div>
+            <div class="cv-section" id="cv-sk">
+                <h3>Skills</h3>
+                <ul id="skills-list">
+                    <!-- Autofilled by JS -->
+                </ul>
+            </div>
+        </section>
 
-<style>
-  /* Define the styles for screens with a maximum width of 600px */
-  @media screen and (max-width: 600px) {
-    img {
-      max-width: 80%; /* Set the image width to 80% of the available screen width */
-    }
-  }
-  
-  /* Define the styles for screens with a maximum width of 900px */
-  @media screen and (max-width: 900px) {
-    img {
-      max-width: 60%; /* Set the image width to 60% of the available screen width */
-    }
-  }
-  
-  /* Define the styles for screens with a maximum width of 1200px */
-  @media screen and (max-width: 1200px) {
-    img {
-      max-width: 40%; /* Set the image width to 40% of the available screen width */
-    }
-  }
-  
-  /* Define the styles for screens with a maximum width of 1600px */
-  @media screen and (max-width: 1600px) {
-    img {
-      max-width: 30%; /* Set the image width to 30% of the available screen width */
-    }
-  }
-</style>
-  <div class="footerPlaceHolder">
-    <p>
-        <b class=copyright> <a href="https://cdw.intron014.com">cdw</a></b>
-        <b class=copyright> <a href="https://blog.intron014.com">blog</a></b>
-        <b class=copyright> <a href="https://status.intron014.com">status</a></b><br>
-        <a href="https://www.last.fm/user/Intr0n">
-          <img id="current-song" src="https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io" alt="Currently playing song">
-        </a><br>
-        <b class=copyright> By navigating this website you're agreeing to the <a href="/tos.html">Terms of Service</a></b><br>
-        <b class=copyright> So long and thanks for all the fish</b><br> <!-- ><(((º> -->
-        <b class=copyright> &copy;I014(2020-2024)</b>
-    </p>
-  </div>
+        <section id="projects">
+            <div class="cv-section" id="cv-pr">
+                <h2>Projects</h2>
+                <ul id="projects-list">
+                    <!-- Autofilled by JS -->
+                </ul>
+            </div>
+        </section>
+    </main>
 
-  <script>
-    function updateImage() {
-        var img = document.getElementById('current-song');
-        var currentTime = new Date().getTime(); // Get current time to avoid caching
-        img.src = "https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io&_=" + currentTime;
-    }
-    setInterval(updateImage, 10000);
-</script>
+    <footer>
+        <div class="footerPlaceHolder">
+            <p><a href="https://cdw.intron014.com">cdw</a> | <a href="https://blog.intron014.com">blog</a> | <a href="https://status.intron014.com">status</a></p>
+            <p><a href="https://www.last.fm/user/Intr0n"><img id="current-song" src="https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io" alt="Currently playing song"></a></p>
+            <p>By navigating this website you're agreeing to the <a href="/tos.html">Terms of Service</a></p>
+            <p>So long and thanks for all the fish</p>
+            <p class="copyright">©I014(2020-2024)</p>
+        </div>
+    </footer>
+
+    <script>
+        function updateImage() {
+            var img = document.getElementById('current-song');
+            var currentTime = new Date().getTime(); // Get current time to avoid caching
+            img.src = "https://img.shields.io/endpoint?color=blue&url=https://api.intron014.com/intr0n/latest-song?format=shields.io&_=" + currentTime;
+        }
+        setInterval(updateImage, 10000);
+    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
