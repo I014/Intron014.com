@@ -12,8 +12,10 @@ function updateCurrentSong() {
         .then(data => {
             if (data.track && data.track.name && data.track.artist && data.track.artist['#text']) {
                 const track = data.track;
-                songInfo.textContent = `${track.name} by ${track.artist['#text']}`;
-                songIndicator.classList.add('playing');
+                songInfo.innerHTML = `<a href="${track.url}">${track.name} by ${track.artist['#text']}</a>`;
+                if(data.track['@attr'] && data.track['@attr'].nowplaying === 'true') {
+                    songIndicator.classList.add('playing');
+                }
             } else {
                 throw new Error('Invalid track data');
             }
