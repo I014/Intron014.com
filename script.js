@@ -53,7 +53,11 @@ const cvData = {
     const projectsList = document.getElementById('projects-list');
     cvData.projects.forEach(project => {
       const li = document.createElement('li');
-      li.innerHTML = `<strong>${project.title}</strong><br>${project.description}`;
+      li.innerHTML = `
+        <strong><a href="${project.link}">${project.title}</a></strong><br>
+        ${project.description}<br>
+        <span class="project-tags">${project.tags.join(', ')}</span>
+      `;
       projectsList.appendChild(li);
     });
 

@@ -62,12 +62,12 @@ h2 {
   color: #FCF7F8;
 }
 
-#education-list, #experience-list, #skills-list {
+#education-list, #experience-list, #skills-list, #projects-list {
   list-style-type: none;
   padding: 0;
 }
 
-#education-list li, #experience-list li, #skills-list li, #sauce-list li {
+#education-list li, #experience-list li, #skills-list li, #projects-list li {
   margin-bottom: 1em;
 }
 
@@ -191,4 +191,10 @@ footer {
 .song-info {
   font-size: 0.875rem;
   color: #ffffff;
+}
+
+.project-tags {
+  font-size: 0.8em;
+  color: #8a8a8a;
+  font-style: italic;
 }
