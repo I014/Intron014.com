@@ -1,15 +1,20 @@
 const cvData = {
     education: [
-
+      
     ],
     experience: [
       
     ],
     skills: [
-        
+      
     ],
     projects: [
-      
+      {
+        title: 'Reldus',
+        description: 'Developed a chess engine in Swift that leverages an AI decision tree with alpha-beta pruning to predict optimal moves. The engine communicates using the standard UCI protocol and supports advanced chess rules including castling, en passant, threefold repetition, and pawn promotion.',
+        link: 'https://github.com/Intron014/Reldus',
+        tags: ['Swift', 'AI', 'Chess']
+      },
     ]
   };
   
