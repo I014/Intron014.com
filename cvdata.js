@@ -20,7 +20,7 @@ const cvData = {
           title: 'Gasoprice',
           description: 'Built a PWA that fetches real-time gas prices for all Spanish gas stations and then displays the closest ones to the user, ' +
                       'allowing for fine-grained filtering by fuel type, brand and prices. It also allows users to see a map view of the stations.',
-          link: 'https://gp.intron014.com',
+          link: 'https://gasoprice.com',
           tags: ['PWA', 'Flask', 'Python', 'API']
         }
     ]
