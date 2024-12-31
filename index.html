@@ -19,8 +19,16 @@
     <script src="https://api.intron014.com/webfiles/cvscript.js"></script>
     <link rel="icon" href="resources/favicon.ico">
     <script defer src="https://stats.chessnibble.com/script.js" data-website-id="81bbb778-7767-4655-823f-35e6cac2a417"></script>
+    <link rel="stylesheet" href="terminal.css">
 </head>
 <body>
+    <div class="terminal-mode">
+        <div class="terminal-content"></div>
+        <div class="terminal-input-line">
+            <span class="terminal-prompt">></span>
+            <input type="text" class="terminal-input" autofocus>
+        </div>
+    </div>
     <main>
         <section id="home">
             <div id="typewriter" style="text-align: center; font-size: 1.5em; min-height: 3em; display: flex; align-items: center; justify-content: center;">
@@ -116,5 +124,6 @@
 
     <script src="https://api.intron014.com/webfiles/current-song.js"></script>
     <script src="cvdata.js"></script>
+    <script src="terminal.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+.terminal-mode {
+    background: #000;
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    display: none;
+}
+
+.terminal-content {
+    color: #0f0;
+}
+
+.terminal-input-line {
+    display: flex;
+    margin: 5px 0;
+}
+
+.terminal-prompt {
+    color: #0f0;
+    margin-right: 10px;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    color: #0f0;
+    font-family: 'Roboto Mono', monospace;
+    flex-grow: 1;
+    outline: none;
+}
+
+.terminal-output {
+    color: #0f0;
+    white-space: pre-wrap;
+    margin: 5px 0;
+}
+
+.terminal-error {
+    color: #f00;
+}
