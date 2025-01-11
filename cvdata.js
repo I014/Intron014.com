@@ -28,7 +28,7 @@ const cvData = {
 		  description: 'Developed using the [Vapor](https://vapor.codes/) framework an API to replace my old inefficient Flask API, with various endpoints ' +
 					   'such as: Retrieving bus times, fetching my favorite stations, grabbing the song I am currently listening to and a few other more ' +
 					   '(such as serving the .js used to display this very list)',
-		  link: 'https://api.intron014.com',
+		  link: 'https://github.com/Intron014/api.intron014.com',
 		  tags: ['Swift', 'API', 'Vapor']
         }
     ]
